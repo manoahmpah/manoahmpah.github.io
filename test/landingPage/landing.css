@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Enoway;
+    src: url(./fonts/Enoway_Personal_Use.otf);
+  }
+  
+
+body{
+    background-color: black;
+}
+
+.ContainerDivLanding{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.div1{
+    height: 100%;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: -80px 16px 100px 0px rgba(255, 255, 255, 0.24);
+}
+
+.div2{
+    height: 100%;
+    background-color: black;
+    border-radius: 9999px;
+    box-shadow: 61px 16px 100px 0px rgba(255, 255, 255, 0.24);
+}
+
+.ContainerLogo{
+    color: white;
+text-align: center;
+position: fixed;
+top: 18%;
+left: 41%;
+opacity: 0;
+
+}
+
+.ContainerLogo h1{
+    font-size: 25em;
+    font-family: Enoway;
+
+}

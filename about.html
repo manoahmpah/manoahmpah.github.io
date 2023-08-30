@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/logo.png"/>
+    <link rel="stylesheet" href="about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet"/>
+
+    <title>Manoah MPAH | Portfolio</title>
+</head>
+<body data-barba="wrapper">
+    <main data-barba="container" data-barba-namespace="about">
+        <div class="navBar">
+            <div>
+                <a href="./index.html" class="logo hover">M<span class="green-point">.</span> </a>
+            </div>
+            
+            <div class="containerA">
+                
+                <a class="navbooton" href="./about.html">About</a>
+                <a class="navbooton" id="paddingS" href="./school.html">School</a>
+                <a class="navbooton" id="paddingE" href="./experiences.html">Experiences</a>
+                <a class="navbooton" href="./projects.html">Projects</a>
+                
+            </div>
+            
+        </div>
+        <div class="container-line">
+            <div class="line"></div>
+        </div>
+        <div class="containerAboutGrid">
+            <div class="containerAboutText">
+                <div>
+                    <h2>About<span class="green-point">.</span></h2>
+                </div>
+                <div class="containerText">
+                    <p>
+                        Hello, let me introduce myself, my name is <span class="highlight">Manoah</span>, I am 17 years old, soon to be 18. I am therefore a student in the <span class="highlight">SupInfo</span> establishment. For almost 5 years I have been in web design. <br><br>
+    
+                        I like to transcribe my <span class="highlight">imagination</span> to <span class="highlight">invention</span>. But it does not stop there, my curiosity took me to discover the world of <span class="highlight">network security</span> and thus have an experience.
+                    </p>
+                </div>
+            </div>
+            <div class="Containerimgme2">
+                <img class="me2" src="./img/me2.png" alt="mon visage">
+            </div>
+        </div>
+    
+        <!-- footer -->
+        
+        <section class="footer">
+            <!-- CV -->
+            <div class="ContainersFooter hover">
+                <a href="#" class="links">
+                    <img src="./img/Cv.png" alt="twitter logo" class="footer-logo">
+                    <span class="footer-text">CV</span>
+                </a>
+            </div>
+    
+            <!-- Email -->
+            <div class="ContainersFooter hover">
+                <a href="" class="links">
+                    <img src="./img/email.png" alt="at logo" class="footer-logo">
+                    <span class="footer-text">mpahmanoah@gmail.com</span>
+                </a>
+            </div>
+    
+            <!-- Twitter -->
+            <div class="ContainersFooter hover">
+                <a href="#" class="links">
+                    <img src="./img/X.png" alt="twitter logo" class="footer-logo">
+                    <span class="footer-text">twitter | X</span>
+                </a>
+            </div>
+            
+            <!-- Linkedin -->
+            <div class="ContainersFooter hover">
+                <a href="#" class="links">
+                    <img src="./img/linkedin.png" alt="Linkedin logo" class="footer-logo">
+                    <span class="footer-text">Linkedin</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+
+    <div class="mouse mouse_hidden"></div>
+  <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js"></script>
+    <script src="./mouse.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module">
+        // barba.js
+        
+        
+        const tlBarba = gsap.timeline();
+        
+        
+        barba.init({
+          transitions: [{
+            name: 'opacity-transition',
+            leave(data) {
+              return gsap.to(".mouse", {opacity: 5,
+                scale: 1000, duration:1
+              });
+            },
+            enter(data) {
+              return gsap.to(".mouse", {
+                scale: 1, duration:1
+              });
+            }
+          }]
+        });
+
+        function OnceReload (TimeReload){
+            const TimeReload = 0
+
+            if (TimeReload < 5){
+            TimeReload += 1
+               return location.reload()
+               
+            }
+        }
+
+        // OnceReload(TimeReload)
+        
+          </script>
+        
+    
+</body>
+</html>
