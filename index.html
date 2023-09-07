@@ -15,8 +15,8 @@
 
     <title>Manoah MPAH | Portfolio</title>
   </head>
-  <body data-barba="wrapper">
-    <main data-barba="container" data-barba-namespace="home">
+  <body>
+
       <!-- Class & Id Swup -->
     <section class="sectionnavbar">
       <nav class="container-logo hover">
@@ -33,10 +33,10 @@
       <div class="none experienceimg container-img-and-title">
         <img class="img" src="./img/experience.jpg" alt="Mongolefière dans le dessert" />
       </div>
-    </div>
-    <div class="none projectsimg container-img-and-title">
-      <img class="img" src="./img/projects.jpg" alt="Dame qui conçoit des typologies de lettre" />
-    </div>
+      </div>
+        <div class="none projectsimg container-img-and-title">
+          <img class="img" src="./img/projects.jpg" alt="Dame qui conçoit des typologies de lettre" />
+      </div>
 
       <!-- Title -->
       <div class="none AboutContainer">
@@ -59,39 +59,12 @@
     </section>
    
     <div class="mouse mouse_hidden"></div>
-    </main>
+
     
       
-   
+    <script src="./mouse.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./app.js"></script>
   </body>
-  <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js"></script>
-  <script src="./mouse.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="./app.js"></script>
-  <script type="module">
-// barba.js
-
-
-const tlBarba = gsap.timeline();
-
-
-barba.init({
-  transitions: [{
-    name: 'opacity-transition',
-    leave(data) {
-      return gsap.to(".mouse", {opacity: 5,
-        scale: 1000, duration:1
-      });
-    },
-    enter(data) {
-      return gsap.to(".mouse", {
-        scale: 1, duration:1
-      });
-    }
-  }]
-});
-
-  </script>
-
-</html>
+  </html>
