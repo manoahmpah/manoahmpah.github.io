@@ -1,1 +1,0 @@
-# manoahmpah.github.io
