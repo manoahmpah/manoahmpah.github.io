@@ -56,5 +56,4 @@ ScrollTrigger.create({
   scrub: 1,
   pin: true,
   antticipatePin: 1000,
-  markers: true,
 });

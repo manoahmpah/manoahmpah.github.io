@@ -11,7 +11,9 @@ html.is-animating .transition-main {
   font-family: Enoway;
   src: url(./fonts/Enoway_Personal_Use.otf);
 }
-
+body {
+  overflow-x: hidden;
+}
 * {
   padding: 0;
   margin: 0;
@@ -157,4 +159,101 @@ html.is-animating .transition-main {
 .footer-text {
   font-size: 16px; /* Ajustez la taille de la police selon vos besoins */
   font-family: "Titillium Web", sans-serif;
+}
+
+.burger {
+  display: none;
+}
+
+.ContainerBurger {
+  display: none;
+}
+
+.transitionBurger {
+  height: 100vh;
+  transform: translateX(100%);
+  width: 100vw;
+  z-index: 10;
+  position: absolute;
+  background-color: black;
+}
+
+.texteee {
+  color: white;
+}
+
+.cross {
+  height: 2px;
+  width: 35px;
+
+  margin-left: 90%;
+  background-color: white;
+}
+
+.FL {
+  transform: rotate(45deg) translate(2px);
+}
+
+.SL {
+  transform: rotate(-45deg);
+}
+
+.ContainerCross {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.BurgerA {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-family: Enoway;
+  font-size: 10vh;
+  text-align: center;
+  align-items: center;
+}
+
+.transitionBurger {
+  display: none;
+}
+@media (max-width: 875px) {
+  .containerAboutGrid {
+    display: block;
+    height: 100%;
+  }
+  .containerAboutText {
+    height: fit-content;
+    position: relative;
+    padding-left: 10%;
+    /* top: 50%; */
+    transform: translateY(0%);
+  }
+
+  .me2 {
+    display: none;
+  }
+
+  .ContainerBurger {
+    display: block;
+  }
+  .burger {
+    display: block;
+    height: 2px;
+    width: 35px;
+    margin: 10px;
+    background-color: black;
+  }
+
+  .containerA {
+    display: none;
+  }
+
+  .containerAboutGrid {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .transitionBurger {
+    display: block;
+  }
 }
