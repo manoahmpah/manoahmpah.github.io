@@ -256,4 +256,20 @@ body {
   .transitionBurger {
     display: block;
   }
+
+  .containerAboutText {
+    padding-left: 0%;
+  }
+
+  .containerText {
+    width: 100%;
+    padding: 0%;
+  }
+  .containerText p {
+    width: 90%;
+    padding-left: 5%;
+  }
+  .containerAboutText h2 {
+    text-align: center;
+  }
 }
