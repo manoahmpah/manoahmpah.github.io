@@ -11,13 +11,11 @@ ContainerBurger.addEventListener("click", () => {
 const ContainerCross = document.querySelector(".ContainerCross");
 const tl1 = gsap.timeline();
 ContainerCross.addEventListener("click", () => {
-  tl1
-    .to(".transitionBurger", { x: innerWidth })
-    .to(".transitionBurger", {
-      opacity: 0,
-      duration: 0.5,
-      onComplete: hideElement,
-    });
+  tl1.to(".transitionBurger", { x: innerWidth }).to(".transitionBurger", {
+    opacity: 0,
+    duration: 0.5,
+    onComplete: hideElement,
+  });
 
   function hideElement() {
     document.querySelector(".transitionBurger").style.display = "none";
