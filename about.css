@@ -205,7 +205,9 @@ body {
   text-align: center;
   align-items: center;
 }
-
+.ContainerBurger {
+  display: none;
+}
 @media (max-width: 875px) {
   .containerAboutGrid {
     display: block;
@@ -271,9 +273,6 @@ body {
   body {
     overflow-x: hidden;
   }
-  .mouse {
-    display: none;
-  }
 }
 
 /* Responsive footer */
@@ -292,5 +291,8 @@ body {
 @media (max-width: 325px) {
   .footer {
     display: block;
+  }
+  .mouse {
+    display: none;
   }
 }
