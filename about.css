@@ -161,21 +161,14 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
-.burger {
-  display: none;
-}
-
-.ContainerBurger {
-  display: none;
-}
-
 .transitionBurger {
   height: 100vh;
-  transform: translateX(100%);
   width: 100vw;
   z-index: 10;
   position: absolute;
+  transform: translateX(100%);
   background-color: black;
+  overflow-x: hidden;
 }
 
 .texteee {
@@ -213,9 +206,6 @@ body {
   align-items: center;
 }
 
-.transitionBurger {
-  display: none;
-}
 @media (max-width: 875px) {
   .containerAboutGrid {
     display: block;
@@ -253,10 +243,6 @@ body {
     padding-bottom: 10%;
   }
 
-  .transitionBurger {
-    display: block;
-  }
-
   .containerAboutText {
     padding-left: 0%;
   }
@@ -281,5 +267,30 @@ body {
 
   .footer {
     padding-left: 0%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .mouse {
+    display: none;
+  }
+}
+
+/* Responsive footer */
+@media (max-width: 617px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .ContainersFooter:nth-child(3) {
+    grid-column: 2 / 2;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 325px) {
+  .footer {
+    display: block;
   }
 }
