@@ -1,2 +1,2 @@
-## Create a new folio
-# More JS with GSAP libray 🚀
+# Create a new folio
+## More JS with GSAP libray 🚀
